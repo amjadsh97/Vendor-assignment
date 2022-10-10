@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class TextVendingMachineInterface implements VendingMachineInterface {
 
-  private SimpleCalculator calculator = new SimpleCalculator();
-  private List<Snack> Snacks = new ArrayList<Snack>(25);
+  private final SimpleCalculator calculator = new SimpleCalculator();
+  private final List<Snack> Snacks = new ArrayList<Snack>(25);
   private int price_snack;
   private CoinBundle change;
   private int type;
